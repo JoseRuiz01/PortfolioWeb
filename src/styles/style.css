@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white !important; 
+    font-family: 'Fira Code', monospace; 
+    font-size: 4rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    margin: 0;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#animated-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    border-right: 2px solid #333;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.cv-download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-download-button:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}
+
+/* Bento container */
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Bento items */
+.bento-item {
+    background-color: #aba8a8; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About section */
+.bento-item.about {
+    grid-column: span 2; /* Make it span two columns on larger screens */
+}
+
+/* Portfolio section */
+.bento-item.portfolio img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* CV section */
+.bento-item.cv {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center-align the text */
+    height: auto; /* Let the height adjust automatically */
+    max-height: 150px; /* Limit the maximum height */
+    padding: 10px; /* Reduce padding to make the box smaller */
+}
+
+/* CV download button */
+.cv-download-button {
+    display: inline-block;
+    padding: 15px 30px; /* Increase button size */
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem; /* Make the text larger */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add spacing above the button */
+}
+
+.cv-download-button:hover {
+    background-color: #cc5200;
+}
+
+/* Contact form */
+.bento-item.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bento-item.contact label {
+    margin: 10px 0 5px;
+}
+
+.bento-item.contact input,
+.bento-item.contact textarea,
+.bento-item.contact button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bento-item.contact button {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bento-item.contact button:hover {
+    background-color: #cc5200;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .bento-item.about {
+        grid-column: span 1; /* Revert to one column on smaller screens */
+    }
+}

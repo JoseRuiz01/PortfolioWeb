@@ -1,0 +1,25 @@
+{
+  "name": "JoseRz",
+  "version": "1.0.0",
+  "description": "A professional web page portfolio for showcasing projects and skills.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build script not defined'",
+    "test": "echo 'Test script not defined'"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Jose Rz",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
