@@ -17,8 +17,8 @@ JoseRz
 │   └── assets
 │       ├── fonts         # Custom fonts used in the portfolio
 │       └── images        # Images for projects and personal branding
-├── package.json          # npm configuration file
-└── README.md             # Project documentation
+├── package.json          
+└── README.md             
 ```
 
 ## Setup Instructions
@@ -34,9 +34,6 @@ JoseRz
 - Responsive design that adapts to various screen sizes.
 - Interactive elements powered by JavaScript.
 - Custom fonts and images to enhance visual appeal.
-
-## Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
