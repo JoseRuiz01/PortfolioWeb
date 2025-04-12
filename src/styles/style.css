@@ -69,8 +69,8 @@ footer {
     background-color: #333;
 }
 
-.nav-bar li {
-    margin: 0 15px;
+.nav-bar li a:hover {
+    color: orange;
 }
 
 .nav-bar a {
@@ -135,6 +135,15 @@ footer {
 /* About section */
 .bento-item.about {
     grid-column: span 2; /* Make it span two columns on larger screens */
+}
+
+/* photo student section */
+.bento-item.photo-student img.student-image {
+    width: 100%; /* Make the image fill most of the box */
+    height: 100%; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image scales properly */
+    border-radius: 15px; /* Match the box's rounded corners */
+    margin: auto; /* Center the image inside the box */
 }
 
 /* Portfolio section */
