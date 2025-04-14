@@ -185,19 +185,19 @@ footer {
 
 /* Contact form */
 .contact-banner {
-    position: fixed;
+    position: fixed;  
     bottom: 0;
     width: 100%;
     background-color: #333;
     text-align: center;
     padding: 15px 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
 }
 
 .contact-banner .contact-link {
     color: white;
     font-size: 1.2rem;
-    font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
 }
