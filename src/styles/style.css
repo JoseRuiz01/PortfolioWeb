@@ -184,36 +184,27 @@ footer {
 }
 
 /* Contact form */
-.bento-item.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.bento-item.contact label {
-    margin: 10px 0 5px;
-}
-
-.bento-item.contact input,
-.bento-item.contact textarea,
-.bento-item.contact button {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.bento-item.contact button {
+.contact-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #333;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-banner .contact-link {
     color: white;
+    font-size: 1.2rem;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.bento-item.contact button:hover {
-    background-color: #cc5200;
+.contact-banner .contact-link:hover {
+    color: orange;
 }
-
 /* Responsive design */
 @media (max-width: 600px) {
     .bento-item.about {
